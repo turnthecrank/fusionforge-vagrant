@@ -1,0 +1,4 @@
+This Vagrant configuration is for a FusionForge 5.2 server built on top of Debian7 RC1.
+
+Debian 7 (aka Wheezy) was selected as it is on the verge of release in April 2013.  
+FusionForge 5.2 is the current stable version of FusionForge.
