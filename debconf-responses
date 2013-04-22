@@ -1,0 +1,25 @@
+# Provide responses for FusionForge
+# FusionForge admin password is "password" in this file
+gforge-db-postgresql	fusionforge/shared/admin_password_confirm	password	password
+gforge-db-postgresql	fusionforge/shared/admin_password	password	password
+# What do you want to do about configuration file pg_hba.conf? Install the new version configured by fusionforge.
+gforge-db-postgresql	fusionforge/ucfchangeprompt	select	install_new
+
+# Provide responses for mailman
+# Select english as the only language needed for mailman
+# run "newlist mailman" and follow the instructions on-screen.  
+# Note that you also need to start mailman after that, using /etc/init.d/mailman start.
+mailman	mailman/site_languages	multiselect	en
+mailman	mailman/default_server_language	select	en
+mailman	mailman/create_site_list	note
+
+# What about this, that and the other?  Install the package maintainer's version
+# Specifically: 
+# gforge-shell-postgresql (nsswitch.conf: install the package maintainer's version) 
+# gforge-mta-exim4 (aliases: install the package maintainer's version) 
+#                  (exim4.conf.template: install the package maintainer's version) 
+#                  (01_exim4-config_listmacrosdefs: install the package maintainer's version) 
+ucf	ucf/changeprompt	select	install_new
+
+# Possibly useful exim4 configuration
+#exim4-daemon-heavy	exim4-daemon-heavy/drec	error
