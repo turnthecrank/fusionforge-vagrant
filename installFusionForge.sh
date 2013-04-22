@@ -52,7 +52,7 @@ sed -e "s/UNICODE/UTF8/" -i /usr/share/gforge/bin/install-db.sh
 apt-get install fusionforge-standard
 
 # Install FusionForge plugin we will need
-apt-get install fusionforge-plugin-contribtracker fusionforge-plugin-headermenu \
-#  fusionforge-plugin-globalsearch fusionforge-plugin-mediawiki \
-#  fusionforge-plugin-moinmoin fusionforge-plugin-projectlabels \
-#  fusionforge-plugin-scmgit fusionforge-plugin-blocks fusionforge-plugin-hudson
+sudo apt-get install fusionforge-plugin-contribtracker fusionforge-plugin-headermenu \
+  fusionforge-plugin-globalsearch fusionforge-plugin-mediawiki \
+  fusionforge-plugin-moinmoin fusionforge-plugin-projectlabels \
+  fusionforge-plugin-scmgit fusionforge-plugin-blocks fusionforge-plugin-hudson
