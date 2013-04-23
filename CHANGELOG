@@ -1,0 +1,12 @@
+2013-04-23 (v0.1)
+
+ * Rename VM to FusionForge-5.2-Debian-7-x86_64 (Philip Chase)
+ * Add these FusionForge plugins: blocks contribtracker globalsearch headermenu hudson 
+   mediawiki moinmoin projectlabels scmgit (Philip Chase)
+ * Add Vagrant shell provision script for FusionForge 5.2 Standard package and port forwarding (Philip Chase)
+ * Add debconfExtractor.sh to simplify creation of debconf response file (Philip Chase)
+
+2013-04-21
+
+ * Initial commit of Debian 7 rc1 vagrant file
+ 
