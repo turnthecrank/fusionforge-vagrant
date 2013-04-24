@@ -56,3 +56,9 @@ apt-get install fusionforge-plugin-contribtracker fusionforge-plugin-headermenu 
   fusionforge-plugin-globalsearch fusionforge-plugin-mediawiki \
   fusionforge-plugin-moinmoin fusionforge-plugin-projectlabels \
   fusionforge-plugin-scmgit fusionforge-plugin-blocks fusionforge-plugin-hudson
+
+# Install authldap plugin
+apt-get install fusionforge-plugin-authldap
+cp $SHARED_FOLDER/authldap.ini /etc/fusionforge/config.ini.d/authldap.ini
+# turn off certificate verification
+echo "TLS_REQCERT never" >> /etc/ldap/ldap.conf
